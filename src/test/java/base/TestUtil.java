@@ -75,7 +75,7 @@ public class TestUtil extends DataProviders{
         return new EdgeDriver();
     }
 
-    private WebDriver setupChromeDriver(){
+    private WebDriver setupChromeDriver() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }

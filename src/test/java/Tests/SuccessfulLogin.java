@@ -8,7 +8,7 @@ import pages.ProductPage;
 public class SuccessfulLogin extends TestUtil {
 
     @Test(dataProvider = "validUserNameFromCsv")
-    public void successfulLogin1(String userName, String password) {
+    public void successfulLogin(String userName, String password) {
         LoginPage loginPage = new LoginPage(driver);
         ProductPage productPage = loginPage.login(userName, password);
 
