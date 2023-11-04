@@ -41,14 +41,12 @@ public class CheckoutTest extends TestUtil {
 
     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-    WebElement addBikeLight = driver.findElement(By.id("add-to-cart-sauce-labs-bike-light"));
-    addBikeLight.click();
+    WebElement addOnesie = driver.findElement(By.id("add-to-cart-sauce-labs-onesie"));
+    addOnesie.click();
 
-    WebElement addFleeceJacket = driver.findElement(By.id("add-to-cart-sauce-labs-fleece-jacket"));
-    addFleeceJacket.click();
+    WebElement addTShirt = driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt"));
+    addTShirt.click();
 
-    WebElement addBackpack = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
-    addBackpack.click();
 
     WebElement cartButton = driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a"));
     cartButton.click();
