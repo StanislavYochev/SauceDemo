@@ -3,7 +3,7 @@ package Tests;
 import base.TestUtil;
 
 
-import io.netty.util.internal.StringUtil;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +35,7 @@ public class CheckoutTest extends TestUtil {
 
 
     @Test
-    public void checkout() {
+    public void Checkout() {
     LoginPage loginPage = new LoginPage(driver);
     ProductPage productPage = loginPage.login("standard_user", "secret_sauce");
 

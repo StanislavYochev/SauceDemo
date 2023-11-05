@@ -3,13 +3,26 @@ package Tests;
 import base.TestUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.ProductPage;
 import java.util.concurrent.TimeUnit;
 
-public class ProductTest extends TestUtil {
+public class ProductTest extends TestUtil{
+        @FindBy(id = "add-to-cart-sauce-labs-bike-light")
+        WebElement addBikeLight;
+        @FindBy(id = "add-to-cart-sauce-labs-fleece-jacket")
+        WebElement addFleeceJacket;
+        @FindBy(id = "backpack")
+        WebElement addBackpack;
+        @FindBy(xpath = "//*[@id=\"shopping_cart_container\"]/a")
+        WebElement cartButton;
+        @FindBy(id = "checkout")
+        WebElement checkoutButton;
+
+
         @Test
         public void successfulAddingOfAItem(){
 
@@ -34,7 +47,7 @@ public class ProductTest extends TestUtil {
                 checkoutButton.click();
 
 
-                Assert.assertEquals(productPage.getItemsInTheCart(), 3, "Because we`ve just added an items");
+                Assert.assertEquals(productPage.getItemsInTheCart(), 3, "You have added 3 items to the cart");
 
         }
         }

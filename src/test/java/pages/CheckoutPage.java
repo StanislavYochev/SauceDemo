@@ -19,6 +19,7 @@ public class CheckoutPage extends BasePage {
 
     @Override
     public boolean isAt() {
+
         return continueButton.isDisplayed();
     }
 }
