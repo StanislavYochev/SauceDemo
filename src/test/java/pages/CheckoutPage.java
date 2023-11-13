@@ -6,9 +6,22 @@ import org.openqa.selenium.support.FindBy;
 
 public class CheckoutPage extends BasePage {
 
-    private final WebDriver driver;
+    public @FindBy(id = "first-name")
+    WebElement firstNameInput;
+    public @FindBy(id = "last-name")
+    WebElement lastNameInput;
+    public @FindBy(id = "postal-code")
+    WebElement postalCodeInput;
     public @FindBy(id = "continue")
     WebElement continueButton;
+
+    public @FindBy(id = "finish")
+    WebElement finishButton;
+
+    public @FindBy(xpath = "//*[@id=\"checkout_complete_container\"]/img")
+    WebElement finalPic;
+
+    private final WebDriver driver;
 
 
     public CheckoutPage(WebDriver driver) {

@@ -17,22 +17,6 @@ import java.util.concurrent.TimeUnit;
 
 public class CheckoutTest extends TestUtil {
 
-    public @FindBy(id = "first-name")
-    WebElement firstNameInput;
-    public @FindBy(id = "last-name")
-    WebElement lastNameInput;
-    public @FindBy(id = "postal-code")
-    WebElement postalCodeInput;
-    public @FindBy(id = "continue")
-    WebElement continueButton;
-
-    public @FindBy(id = "finish")
-    WebElement finishButton;
-
-    public @FindBy(xpath = "//*[@id=\"checkout_complete_container\"]/img")
-    WebElement finalPic;
-
-
 
     @Test
     public void Checkout() {
